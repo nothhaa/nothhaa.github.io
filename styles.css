@@ -45,4 +45,8 @@ button {
 
 h1 {
     font-family: 'Open Sans', sans-serif; /* Sử dụng font Open Sans cho phần tử h1 */
+    text-shadow: 1px 1px 1px #000, 
+                 -1px -1px 1px #000, 
+                 1px -1px 1px #000, 
+                 -1px 1px 1px #000; /* Tạo một viền đen xung quanh chữ */
 }
