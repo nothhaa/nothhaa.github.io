@@ -45,8 +45,14 @@ button {
 
 h1 {
     font-family: 'Open Sans', sans-serif; /* Sử dụng font Open Sans cho phần tử h1 */
-    text-shadow: 1px 1px 1px #000, 
-                 -1px -1px 1px #000, 
-                 1px -1px 1px #000, 
-                 -1px 1px 1px #000; /* Tạo một viền đen xung quanh chữ */
+    text-shadow: 1px 1px 1px #6420AA, 
+                 -1px -1px 1px #6420AA, 
+                 1px -1px 1px #6420AA, 
+                 -1px 1px 1px #6420AA; /* Tạo một viền đen xung quanh chữ */
+}
+
+#yes, #no {
+    font-family: 'Open Sans', sans-serif; /* Sử dụng font Open Sans cho các button */
+    border: 2px solid #9BB0C1; /* Thêm viền đen có độ dày 2px cho các button */
+    border-radius: 5px; /* Bo tròn góc của button */
 }
