@@ -42,3 +42,7 @@ button {
 #no:hover {
     background-color: #E79CC2;
 }
+
+h1 {
+    font-family: 'Open Sans', sans-serif; /* Sử dụng font Open Sans cho phần tử h1 */
+}
