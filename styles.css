@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#background-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Đặt z-index thấp hơn để đảm bảo rằng nó ở phía sau tất cả các phần tử khác */
+}
+
+body {
+    display: flex;
+    /* Horizontal center */
+    justify-content: center;
+    /* Vertical center */
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    margin: 0;
+}
+
+button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+#yes {
+    background-color: #5BBCFF;
+
+}
+
+#yes:hover {
+    background-color: #41C9E2;
+    cursor: pointer;
+}
+
+#no {
+    background-color: #E59BE9;
+    cursor: pointer;
+}
+
+#no:hover {
+    background-color: #E79CC2;
+}
