@@ -6,10 +6,10 @@ noBtn.addEventListener("click", noClicked);
 // -------------- When yesBtn clicked --------------
 function yesClicked() {
     // Change img url
-    const img = document.getElementsByTagName("iframe")[0]
-    img.src = "https://giphy.com/embed/9HbbuSEXhDZeM";
+    const img = document.getElementsByTagName("iframe")[0];
+    img.src = "https://giphy.com/embed/kZqbBT64ECtjy";
     img.width = "400";
-    img.height = "480"
+    img.height = "480";
 
     // Change title text
     document.getElementsByTagName("h1")[0].innerHTML = "chốt thế nghe =)))))))))";
@@ -17,7 +17,11 @@ function yesClicked() {
     // Hide buttons
     yesBtn.style.display = "none";
     noBtn.style.display = "none";
-    
+
+    // Redirect to bash.html after a longer delay
+    setTimeout(function() {
+        window.location.href = "thu.html";
+    }, 3000); // Chuyển hướng sau 5 giây (5000 millisecond), bạn có thể thay đổi thời gian nếu muốn
 };
 
 // -------------- When noBtn clicked --------------
@@ -35,10 +39,11 @@ function noClicked() {
         "nàooooo",
     ];
 
-    // reset the message when they are all read.
+    // reset the message when they are all read
     if (i == btnMessage.length) {
         i = 0;
     };
+
     // Change the button text
     noBtn.innerHTML = btnMessage[i];
     i++;
@@ -46,12 +51,12 @@ function noClicked() {
     // ------ noBtn -------
     // Change the font-size
     var noBtnWinFontSize = window.getComputedStyle(noBtn, null).getPropertyValue('font-size');
-    var noBtnFontSize = parseFloat(noBtnWinFontSize); 
+    var noBtnFontSize = parseFloat(noBtnWinFontSize);
     noBtn.style.fontSize = (noBtnFontSize - 1) + 'px';
 
     // Change padding
     if (noBtnFontSize < 8) {
-        // Hide the text when it gets too small.
+        // Hide the text when it gets too small
         noBtn.style.display = "none";
     } else if (noBtnFontSize < 10) {
         noBtn.style.padding = "0";
@@ -67,7 +72,7 @@ function noClicked() {
     var yesBtnWinFontSize = window.getComputedStyle(yesBtn, null).getPropertyValue('font-size');
     var yesBtnFontSize = parseFloat(yesBtnWinFontSize);
     yesBtn.style.fontSize = (yesBtnFontSize + 30) + 'px';
-    
+
     // Change padding
     if (yesBtnFontSize >= 400) {
         yesBtn.style.padding = "200px 400px";
@@ -78,6 +83,4 @@ function noClicked() {
     } else if (yesBtnFontSize >= 100) {
         yesBtn.style.padding = "30px 60px";
     };
-    
 };
-
